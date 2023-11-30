@@ -1,0 +1,207 @@
+<div class="modal-content">
+
+    <div class="modal-header pb-0 border-0 justify-content-end">
+        <div #closebutton class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+            <span class="svg-icon svg-icon-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black"></rect>
+                    <rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black"></rect>
+                </svg>
+            </span>
+        </div>
+    </div>
+
+    <form  [formGroup]="UserSelectedForm">
+
+        <div class="modal-body scroll-y px-5 px-lg-10 pt-0 pb-10">
+
+            <div class="mb-13 text-center">
+                <h1 class="mb-3">Ver Usuario</h1>
+            </div>
+
+
+
+            <div class="row mt-7 ms-5 me-5" style="border-bottom: inherit;">
+
+                <div class="col-md-12">
+
+                    <div class="col-md-12 fv-row mb-5">
+                        <label class="d-flex align-items-center fs-6 fw-bolder mb-2">
+                            <span class="required">Documento</span>
+                        </label>
+                        <input type="text" 
+                        
+                         class="form-control form-control-solid" 
+                         placeholder="Ingrese documento" 
+                         required
+                         autocomplete="off"
+                         maxlength="10"
+                         formControlName = "nuDocId"          
+                         [attr.disabled]="true"
+                         >
+                       
+                    </div>
+
+
+                    <div class="row g-12">
+
+
+                        <div class="col-md-4 fv-row mb-5">
+                            <label class="d-flex align-items-center fs-6 fw-bolder mb-2">
+                                <span class="required">Nombre</span>
+                            </label>
+                            <input type="text" 
+                            
+                             class="form-control form-control-solid" 
+                             placeholder="Ingrese Nombre" 
+                             required
+                             autocomplete="off"
+                             maxlength="10"    
+                             formControlName = "dsNombre"     
+                             [attr.disabled]="true"                                                              
+                             >
+
+
+                        </div>
+
+                        <div class="col-md-4 fv-row mb-12">
+                            <label class="d-flex align-items-center fs-6 fw-bolder mb-2">
+                                <span class="required">Apellido Paterno</span>
+                            </label>
+                            <input type="text" 
+                            
+                             class="form-control form-control-solid" 
+                             placeholder="Ingrese Apellido paterno" 
+                             required
+                             autocomplete="off"
+                             maxlength="10"    
+                             formControlName = "dsPaterno"
+                             [attr.disabled]="true"                               
+                             >
+                        </div>
+
+
+                        <div class="col-md-4 fv-row mb-12">
+                            <label class="d-flex align-items-center fs-6 fw-bolder mb-2">
+                                <span class="required">Apellido materno</span>
+                            </label>
+                            <input type="text" 
+                            
+                             class="form-control form-control-solid" 
+                             placeholder="Ingrese Apellido materno" 
+                             required
+                             autocomplete="off"
+                             maxlength="10"   
+                             formControlName = "dsMaterno"   
+                             [attr.disabled]="true"                                               
+                             >
+   
+                        </div>
+
+                    </div>
+
+                    <div class="row g-12">
+
+
+                        <div class="col-md-6 fv-row mb-5">
+                            <label class="d-flex align-items-center fs-6 fw-bolder mb-2">
+                                <span class="required">Correo</span>
+                            </label>
+                            <input type="text" 
+                            
+                             class="form-control form-control-solid" 
+                             placeholder="Ingrese Correo" 
+                             required
+                             autocomplete="off"
+                             maxlength="10"  
+                             formControlName = "dsCorreo"   
+                             [readonly] ="true"                      
+                             >
+                           
+                        </div>
+
+                        <div class="col-md-6 fv-row mb-12">
+                            <label class="d-flex align-items-center fs-6 fw-bolder mb-2">
+                                <span class="required">Rol</span>
+                            </label>
+
+                            <ng-select                                                         
+                            placeholder="Seleccionar Rol"                                                                                                                         
+                            style="width:auto;" 
+                            formControlName = "idRolUsuario"
+                            [readonly] ="true"
+                            >
+                            <ng-option *ngFor="let a of ListadoRolUsuario"  [value]="a.idRolUsuario">{{a.dsRolUsuario}}</ng-option>
+                            </ng-select>
+                            
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="row g-12">
+
+
+                        <div class="col-md-6 fv-row mb-5">
+                            <label class="d-flex align-items-center fs-6 fw-bolder mb-2">
+                                <span class="required">Empresa</span>
+                            </label>
+    
+                           <ng-select                                                         
+                           placeholder="Seleccionar Empresa"                                                                                                                         
+                           style="width:auto;" 
+                           formControlName = "idEmpresa"  
+                           [readonly] ="true"             
+                           >
+                           <ng-option *ngFor="let b of ListadoEmpresa"  [value]="b.idEntidad">{{b.dsRazonSocial}}</ng-option>
+                           </ng-select>
+                            
+                        </div>
+
+                        <div class="col-md-6 fv-row mb-5">
+                            <label class="d-flex align-items-center fs-6 fw-bolder mb-2">
+                                <span class="required">Usuario</span>
+                            </label>
+                            <input type="text" 
+                            
+                             class="form-control form-control-solid" 
+                             placeholder="Ingrese Usuario" 
+                             required
+                             autocomplete="off"
+                             maxlength="10"  
+                             formControlName = "cdUsuario"
+                             [attr.disabled]="true"    
+                                                                 
+                             >
+ 
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            
+            <br>
+
+            <!-- <div class="text-center">
+
+                <button type="submit" class="btn btn-dark btn-lg fw-bolder" id="btn-guardar">
+                    <span>Guardar registro</span>
+                </button>
+
+            </div> -->
+
+        </div>
+
+
+            
+
+
+    </form>
+
+
+</div>

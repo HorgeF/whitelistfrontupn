@@ -1,0 +1,6 @@
+@import url('assets/css/style.bundle.css');
+@import url('assets/plugins/global/plugins.bundle.css');
+@import url('assets/style-general/style.css');
+@import url('assets/plugins/custom/datatables/datatables.bundle.css');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+@import "~@ng-select/ng-select/themes/default.theme.css";

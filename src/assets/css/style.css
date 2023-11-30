@@ -1,0 +1,90 @@
+﻿
+@media (min-width: 1400px) {
+    .sidebar-enabled .wrapper {
+        padding-right: inherit !important;
+    }
+}
+
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../../img/Preloader_11.gif) center no-repeat #fff;
+}
+
+
+.btn.btn-color-warning {
+    color: #ffb100 !important;
+}
+
+.text-orange {
+    color: #ff8430f0 !important;
+}
+
+.btn.btn-warning {
+    color: #fff;
+    border-color: #ffc700;
+    background-color: #ffa900 !important;
+}
+
+.btn-check:active+.btn.btn-active-color-warning, .btn-check:checked+.btn.btn-active-color-warning, .btn.btn-active-color-warning.active, .btn.btn-active-color-warning.show, .btn.btn-active-color-warning:active:not(.btn-active), .btn.btn-active-color-warning:focus:not(.btn-active), .btn.btn-active-color-warning:hover:not(.btn-active), .show>.btn.btn-active-color-warning {
+    color: #ff9201 !important;
+}
+
+.text-blue-dark {
+    color: #0061c4 !important;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #181c32 !important;
+    border-color: transparent;
+}
+
+.select2-container--bootstrap5 .select2-selection--multiple .select2-selection__rendered .select2-selection__choice {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    background-color: #fd9d07e8 !important;
+    color: #FFFFFF !important;
+}
+
+.select2-container--bootstrap5 .select2-selection--multiple.form-select-lg .select2-selection__choice {
+    border-radius: .4rem;
+    padding: .4rem .8rem !important;
+    margin: .4rem .6rem .2rem 0 !important;
+}
+
+@media (min-width: 992px) {
+    div::-webkit-scrollbar, ol::-webkit-scrollbar, pre::-webkit-scrollbar, span::-webkit-scrollbar, ul::-webkit-scrollbar {
+        width: 1rem !important;
+        height: 0.4rem !important;
+    }
+}
+
+#ui-id-1 {
+    font-family: var(--bs-body-font-family) !important;
+}
+
+.ui-widget.ui-widget-content {
+    border: 1px solid #fff7f7 !important;
+    box-shadow: 0 0 50px 0 rgb(82 63 105 / 10%) !important;
+}
+
+.ui-menu .ui-menu-item {
+    margin: 10px !important;
+}
+
+/**/
+
+/*body {
+    background-color: #0d152a !important;
+}
+
+.card {
+    background-color: #0c1326d9 !important;
+}*/

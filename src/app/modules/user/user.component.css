@@ -1,0 +1,16 @@
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+
+::ng-deep #ListadoUsuario .dataTables_filter
+{
+display: none !important;
+
+}
+
+::ng-deep .ng-select.ng-select-single .ng-select-container {
+    height: 36px;
+    background-color: #f5f8fa;
+    border-color: #f5f8fa;
+    color: #5e6278;
+    transition: color .2s ease,background-color .2s ease;
+}

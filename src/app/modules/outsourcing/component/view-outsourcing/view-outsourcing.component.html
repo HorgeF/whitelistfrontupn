@@ -1,0 +1,105 @@
+<div class="modal-content">
+
+    <div class="modal-header pb-0 border-0 justify-content-end">
+        <div #closebutton class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+            <span class="svg-icon svg-icon-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black"></rect>
+                    <rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black"></rect>
+                </svg>
+            </span>
+        </div>
+    </div>
+
+    <form  [formGroup]="OutsourcingSelectedForm">
+
+        <div class="modal-body scroll-y px-5 px-lg-10 pt-0 pb-10">
+
+            <div class="mb-13 text-center">
+                <h1 class="mb-3">View Contrata</h1>
+            </div>
+
+            <div class="row mt-7 ms-5 me-5" style="border-bottom: inherit;">
+
+                <div class="col-md-12">
+
+                    <div class="col-md-12 fv-row mb-5">
+                        <label class="d-flex align-items-center fs-6 fw-bolder mb-2">
+                            <span class="required">RUC</span>
+                        </label>
+                        <input type="text" 
+                        
+                         class="form-control form-control-solid" 
+                         placeholder="Ingrese el ruc" 
+                         required
+                         autocomplete="off"
+                         maxlength="10"
+                         formControlName = "nuDocId"                        
+                         >
+                        
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+
+                    <div class="col-md-12 fv-row mb-5">
+                        <label class="d-flex align-items-center fs-6 fw-bolder mb-2">
+                            <span class="required">Nombre</span>
+                        </label>
+                        <input type="text" 
+                        
+                         class="form-control form-control-solid" 
+                         placeholder="Ingresar el nomre de la contrata" 
+                         required
+                         autocomplete="off"
+                         maxlength="10" 
+                         formControlName = "dsRazonSocial"                                                                            
+                         >
+
+                         
+                        
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-12">
+
+                    <div class="col-md-12 fv-row mb-5">
+                        <label class="d-flex align-items-center fs-6 fw-bolder mb-2">
+                            <span class="required">Direccion</span>
+                        </label>
+                        <input type="text" 
+                        
+                         class="form-control form-control-solid" 
+                         placeholder="Ingrese la direccion de la contrata" 
+                         required
+                         autocomplete="off"
+                         maxlength="10" 
+                         formControlName = "direccion"                                                                      
+                         >
+
+                         
+                        
+                    </div>
+                </div>
+
+
+            </div>
+
+            
+            <br>
+
+            <div class="text-center">
+
+                <button type="submit" class="btn btn-dark btn-lg fw-bolder" id="btn-guardar">
+                    <span>Guardar registro</span>
+                </button>
+
+            </div>
+
+        </div>
+        
+    </form>
+
+</div>

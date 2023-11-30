@@ -1,0 +1,535 @@
+
+
+
+
+<body id="kt_body" style="background-image: url(assets/media/patterns/header-bg.png)" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled"
+data-kt-sticky="true" data-kt-sticky-header="off">
+
+
+<!-- <div class="header-menu align-items-stretch drawer drawer-start drawer-on" data-kt-drawer="true" data-kt-drawer-name="header-menu" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'200px', '300px': '250px'}" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_header_menu_mobile_toggle" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav'}" style="width: 250px !important;">
+
+    <div class="menu menu-lg-rounded menu-column menu-lg-row menu-state-bg menu-title-gray-700 menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-400 fw-bold my-5 my-lg-0 align-items-stretch" id="#kt_header_menu" data-kt-menu="true">
+
+        <div class="menu-item me-lg-1">
+            <a class="menu-link active py-3" href="personalTecnico.php">
+                <span class="menu-title">Personal Técnico</span>
+            </a>
+        </div>
+
+        <div class="menu-item me-lg-1">
+            <a class="menu-link py-3" href="#">
+                <span class="menu-title">Usuarios</span>
+            </a>
+        </div>
+
+        <div data-kt-menu-trigger="click" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion me-lg-1">
+            <a class="menu-link py-3" href="#">
+                <span class="menu-title">Contratas</span>
+                <span class="menu-arrow d-lg-none"></span>
+            </a>
+            <div class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown menu-rounded-0 py-lg-4 w-lg-225px">
+
+                <div class="menu-item">
+                    <a class="menu-link Aplicacion" href="#">
+                        <span class="menu-icon">
+
+                            <span class="svg-icon svg-icon-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path opacity="0.3" d="M20 15H4C2.9 15 2 14.1 2 13V7C2 6.4 2.4 6 3 6H21C21.6 6 22 6.4 22 7V13C22 14.1 21.1 15 20 15ZM13 12H11C10.5 12 10 12.4 10 13V16C10 16.5 10.4 17 11 17H13C13.6 17 14 16.6 14 16V13C14 12.4 13.6 12 13 12Z" fill="black"></path>
+                                <path d="M14 6V5H10V6H8V5C8 3.9 8.9 3 10 3H14C15.1 3 16 3.9 16 5V6H14ZM20 15H14V16C14 16.6 13.5 17 13 17H11C10.5 17 10 16.6 10 16V15H4C3.6 15 3.3 14.9 3 14.7V18C3 19.1 3.9 20 5 20H19C20.1 20 21 19.1 21 18V14.7C20.7 14.9 20.4 15 20 15Z" fill="black"></path>
+                                </svg>
+                            </span>
+
+                        </span>
+                        <span class="menu-title">Lista de contratas</span>
+                    </a>
+                </div>
+
+
+                <div class="menu-item">
+                    <a class="menu-link Formulario" href="#">
+                        <span class="menu-icon">
+
+                            <span class="svg-icon svg-icon-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M20 14H18V10H20C20.6 10 21 10.4 21 11V13C21 13.6 20.6 14 20 14ZM21 19V17C21 16.4 20.6 16 20 16H18V20H20C20.6 20 21 19.6 21 19ZM21 7V5C21 4.4 20.6 4 20 4H18V8H20C20.6 8 21 7.6 21 7Z" fill="black"></path>
+                                <path opacity="0.3" d="M17 22H3C2.4 22 2 21.6 2 21V3C2 2.4 2.4 2 3 2H17C17.6 2 18 2.4 18 3V21C18 21.6 17.6 22 17 22ZM10 7C8.9 7 8 7.9 8 9C8 10.1 8.9 11 10 11C11.1 11 12 10.1 12 9C12 7.9 11.1 7 10 7ZM13.3 16C14 16 14.5 15.3 14.3 14.7C13.7 13.2 12 12 10.1 12C8.10001 12 6.49999 13.1 5.89999 14.7C5.59999 15.3 6.19999 16 7.39999 16H13.3Z" fill="black"></path>
+                                </svg>
+                            </span>
+
+                        </span>
+                        <span class="menu-title">Directorio</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="menu-item me-lg-1">
+            <a class="menu-link py-3" href="configuracion.php">
+                <span class="menu-title">Configuración</span>
+            </a>
+        </div>
+
+    </div>
+
+</div> -->
+
+    <div class="d-flex flex-column flex-root">
+        <div class="page d-flex flex-row flex-column-fluid">
+
+            <div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
+               
+                <!-- Navigation -->
+            
+                <div id="kt_header"
+                 class="header align-items-stretch" 
+                 data-kt-sticky="true" 
+                 data-kt-sticky-name="header"
+                 data-kt-sticky-offset="{default: '200px', lg: '300px'}"
+                 style="animation-duration: 0.3s;"
+                 >
+
+                    <div class="container-xxl d-flex align-items-center">
+
+                        <div class="d-flex topbar align-items-center d-lg-none ms-n2 me-3" title="Show aside menu">
+                            <div class="btn btn-icon btn-active-light-warning w-30px h-30px w-md-40px h-md-40px" id="kt_header_menu_mobile_toggle">
+
+                                <span class="svg-icon svg-icon-2x">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M21 7H3C2.4 7 2 6.6 2 6V4C2 3.4 2.4 3 3 3H21C21.6 3 22 3.4 22 4V6C22 6.6 21.6 7 21 7Z" fill="black"></path>
+                                        <path opacity="0.3" d="M21 14H3C2.4 14 2 13.6 2 13V11C2 10.4 2.4 10 3 10H21C21.6 10 22 10.4 22 11V13C22 13.6 21.6 14 21 14ZM22 20V18C22 17.4 21.6 17 21 17H3C2.4 17 2 17.4 2 18V20C2 20.6 2.4 21 3 21H21C21.6 21 22 20.6 22 20Z" fill="black"></path>
+                                    </svg>
+                                </span>
+
+                            </div>
+                        </div>
+
+                        <div class="header-logo me-5 me-md-10 flex-grow-1 flex-lg-grow-0">
+                            <a href="#">
+                                <img alt="Logo" src="assets/media/logos/logo-white.png" class="logo-default h-50px">
+                                <img alt="Logo" src="assets/media/logos/logo-color.png" class="logo-sticky h-35px">
+                            </a>
+                        </div>
+
+                        <div class="d-flex align-items-stretch justify-content-between flex-lg-grow-1">
+
+                            <div class="d-flex align-items-stretch" id="kt_header_nav">
+
+                                <div class="header-menu align-items-stretch" data-kt-drawer="true" data-kt-drawer-name="header-menu" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'200px', '300px': '250px'}" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_header_menu_mobile_toggle" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav'}">
+
+                                    <div class="menu menu-lg-rounded menu-column menu-lg-row menu-state-bg menu-title-gray-700 menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-400 fw-bold my-5 my-lg-0 align-items-stretch" id="#kt_header_menu" data-kt-menu="true">
+
+                                        <div class="menu-item me-lg-1">
+                                            <a  class="menu-link py-3" [routerLinkActive]="['active']"> 
+                                                <span class="menu-title" [routerLink] ="['/PersonalTecnico']" [routerLinkActive]="['active']" > Personal Técnico</span>
+                                            </a>
+                                            <!-- <sidenav-router-link  [routerLink] ="['/listadoSupervision']" routerLinkActive ="active" >Listado Programación de Visita</sidenav-router-link> -->
+ 
+                                        </div>
+
+                                        <div class="menu-item me-lg-1" style="display: none;">
+                                            <a class="menu-link py-3" [routerLinkActive]="['active']">
+                                                <span class="menu-title" [routerLink] ="['/Usuarios']" [routerLinkActive]="['active']">Usuarios</span>
+                                            </a>
+                                        </div>
+
+                                        <div style="display: none;" ngbDropdown class="d-inline-block" class="menu-item menu-lg-down-accordion me-lg-1">
+
+                                            <a class="menu-link py-3" id="dropdownBasic1" ngbDropdownToggle>
+                                                <span class="menu-title">Contratas</span>
+                                                <span class="menu-arrow d-lg-none"></span>
+                                            </a>
+
+                                            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+  
+                                                
+                                                <div class="menu-item">
+                                                    <a class="menu-link Aplicacion">
+                                                        <span class="menu-icon">
+
+                                                            <span class="svg-icon svg-icon-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path opacity="0.3" d="M20 15H4C2.9 15 2 14.1 2 13V7C2 6.4 2.4 6 3 6H21C21.6 6 22 6.4 22 7V13C22 14.1 21.1 15 20 15ZM13 12H11C10.5 12 10 12.4 10 13V16C10 16.5 10.4 17 11 17H13C13.6 17 14 16.6 14 16V13C14 12.4 13.6 12 13 12Z" fill="black"></path>
+                                                                <path d="M14 6V5H10V6H8V5C8 3.9 8.9 3 10 3H14C15.1 3 16 3.9 16 5V6H14ZM20 15H14V16C14 16.6 13.5 17 13 17H11C10.5 17 10 16.6 10 16V15H4C3.6 15 3.3 14.9 3 14.7V18C3 19.1 3.9 20 5 20H19C20.1 20 21 19.1 21 18V14.7C20.7 14.9 20.4 15 20 15Z" fill="black"></path>
+                                                                </svg>
+                                                            </span>
+
+                                                        </span>
+                                                        <span class="menu-title" [routerLink] ="['/Contratas']">Lista de contratas</span>
+                                                    </a>
+                                                </div>
+
+                                                <div class="menu-item">
+                                                    <a class="menu-link Formulario">
+                                                        <span class="menu-icon">
+
+                                                            <span class="svg-icon svg-icon-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path d="M20 14H18V10H20C20.6 10 21 10.4 21 11V13C21 13.6 20.6 14 20 14ZM21 19V17C21 16.4 20.6 16 20 16H18V20H20C20.6 20 21 19.6 21 19ZM21 7V5C21 4.4 20.6 4 20 4H18V8H20C20.6 8 21 7.6 21 7Z" fill="black"></path>
+                                                                <path opacity="0.3" d="M17 22H3C2.4 22 2 21.6 2 21V3C2 2.4 2.4 2 3 2H17C17.6 2 18 2.4 18 3V21C18 21.6 17.6 22 17 22ZM10 7C8.9 7 8 7.9 8 9C8 10.1 8.9 11 10 11C11.1 11 12 10.1 12 9C12 7.9 11.1 7 10 7ZM13.3 16C14 16 14.5 15.3 14.3 14.7C13.7 13.2 12 12 10.1 12C8.10001 12 6.49999 13.1 5.89999 14.7C5.59999 15.3 6.19999 16 7.39999 16H13.3Z" fill="black"></path>
+                                                                </svg>
+                                                            </span>
+
+                                                        </span>
+                                                        <span class="menu-title" [routerLink] ="['/Directorio']">Directorio</span>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="menu-item me-lg-1" style="display: none;">
+                                            <a class="menu-link py-3" [routerLinkActive]="['active']">
+                                                <span class="menu-title" [routerLink] ="['/Configuracion']" [routerLinkActive]="['active']">Configuración</span>
+                                            </a>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex align-items-center flex-shrink-0" id="kt_header_login">
+                                <div class="header-menu align-items-stretch d-flex align-items-center" data-kt-drawer="true" data-kt-drawer-name="header-menu" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'200px', '300px': '250px'}" data-kt-drawer-direction="end" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{lg: '#kt_header_login'}">
+                                        <div class="menu menu-lg-rounded menu-column menu-lg-row menu-state-bg menu-title-gray-700 menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-400 fw-bold my-5 my-lg-0 align-items-stretch" id="#kt_header_menu" data-kt-menu="true">
+                                            <div class="d-flex d-flex align-items-center">
+                                                <span class="h-20px border-gray-200 border-start mx-4"></span>
+                                                <div class="menu-item me-lg-1">
+                                                    <a class="btn btn-dark btn-icon py-3" href="#" data-bs-toggle="modal" data-bs-target="#modalPolitica" style="background-color: #13162833!important;">
+                                                        <span class="menu-title">
+                                                            <span class="svg-icon svg-icon-1 svg-icon-white">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="black"></rect>
+                                                                <rect x="11" y="14" width="7" height="2" rx="1" transform="rotate(-90 11 14)" fill="black"></rect>
+                                                                <rect x="11" y="17" width="2" height="2" rx="1" transform="rotate(-90 11 17)" fill="black"></rect>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <span class="h-20px border-gray-200 border-start mx-4"></span>
+                                            </div>
+
+                                            <div class="menu-item me-lg-1">
+                                            
+                                                <a class="menu-link py-3">
+                                                    <span class="menu-title fs-6 fw-bolder">{{ user }}</span>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                
+                                <div class="d-flex align-items-center ms-1 ms-lg-3 me-4">
+
+                                    
+
+                                </div>
+                                
+                                <div ngbDropdown class="topbar d-flex align-items-center flex-shrink-0">
+
+                                    <div ngbDropdownToggle class="d-flex align-items-center me-n3" id="kt_header_user_menu_toggle">
+
+                                        <div class="btn btn-icon btn-active-light-warning w-30px h-30px w-md-40px h-md-40px" data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
+                                            <img class="h-40px w-40px rounded me-5" src="assets/media/avatars/150-25.jpg" alt="">
+                                        </div>
+
+                                        <div ngbDropdownMenu class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-primary fw-bold py-4 fs-6 w-275px" data-kt-menu="true" id="kt_menu_6155af3c624ff">
+
+                                            <div class="menu-item px-3">
+                                                <div class="menu-content d-flex px-3">
+
+                                                    <div class="symbol symbol-50px me-5">
+                                                        <img alt="Logo" src="assets/media/avatars/150-27.jpg">
+                                                    </div>
+
+                                                    <div class="d-flex flex-column">
+                                                        <div class="fw-bolder d-flex align-items-center fs-5">
+                                                           Jorge
+                                                        </div>
+                                                        <div class="fw-bolder d-flex align-items-center fs-5">
+                                                            Flores
+                                                        </div>
+                                                        <a href="#" class="fw-bold text-muted text-hover-primary fs-7">Jflores@gamil.com</a>
+                                                        <div class="fw-bolder d-flex align-items-center mt-3">
+                                                            <span class="badge badge-light-success">Administrador</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="separator my-2"></div>
+                                            
+                                            <div class="menu-item px-5 mt-2 mb-2">
+                                                <a href="restablecerPass" class="menu-link px-5 flex-center text-dark">
+                                                    <span class="svg-icon svg-icon-2 me-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path opacity="0.3" d="M20.5543 4.37824L12.1798 2.02473C12.0626 1.99176 11.9376 1.99176 11.8203 2.02473L3.44572 4.37824C3.18118 4.45258 3 4.6807 3 4.93945V13.569C3 14.6914 3.48509 15.8404 4.4417 16.984C5.17231 17.8575 6.18314 18.7345 7.446 19.5909C9.56752 21.0295 11.6566 21.912 11.7445 21.9488C11.8258 21.9829 11.9129 22 12.0001 22C12.0872 22 12.1744 21.983 12.2557 21.9488C12.3435 21.912 14.4326 21.0295 16.5541 19.5909C17.8169 18.7345 18.8277 17.8575 19.5584 16.984C20.515 15.8404 21 14.6914 21 13.569V4.93945C21 4.6807 20.8189 4.45258 20.5543 4.37824Z" fill="black"></path>
+                                                                <path d="M14.854 11.321C14.7568 11.2282 14.6388 11.1818 14.4998 11.1818H14.3333V10.2272C14.3333 9.61741 14.1041 9.09378 13.6458 8.65628C13.1875 8.21876 12.639 8 12 8C11.361 8 10.8124 8.21876 10.3541 8.65626C9.89574 9.09378 9.66663 9.61739 9.66663 10.2272V11.1818H9.49999C9.36115 11.1818 9.24306 11.2282 9.14583 11.321C9.0486 11.4138 9 11.5265 9 11.6591V14.5227C9 14.6553 9.04862 14.768 9.14583 14.8609C9.24306 14.9536 9.36115 15 9.49999 15H14.5C14.6389 15 14.7569 14.9536 14.8542 14.8609C14.9513 14.768 15 14.6553 15 14.5227V11.6591C15.0001 11.5265 14.9513 11.4138 14.854 11.321ZM13.3333 11.1818H10.6666V10.2272C10.6666 9.87594 10.7969 9.57597 11.0573 9.32743C11.3177 9.07886 11.6319 8.9546 12 8.9546C12.3681 8.9546 12.6823 9.07884 12.9427 9.32743C13.2031 9.57595 13.3333 9.87594 13.3333 10.2272V11.1818Z" fill="black"></path>
+                                                            </svg>
+                                                        </span>
+                                                    Cambiar contraseña
+                                                </a>
+                                            </div>
+
+                                            <div class="separator my-2"></div>
+
+                                            <div class="menu-item px-5 mt-2 mb-1">
+                                                <a [routerLink] ="['/']" class="menu-link px-5 flex-center text-danger">
+                                                    <span class="svg-icon svg-icon-2 me-3">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                            <rect opacity="0.3" x="8.5" y="11" width="12" height="2" rx="1" fill="black"></rect>
+                                                            <path d="M10.3687 11.6927L12.1244 10.2297C12.5946 9.83785 12.6268 9.12683 12.194 8.69401C11.8043 8.3043 11.1784 8.28591 10.7664 8.65206L7.84084 11.2526C7.39332 11.6504 7.39332 12.3496 7.84084 12.7474L10.7664 15.3479C11.1784 15.7141 11.8043 15.6957 12.194 15.306C12.6268 14.8732 12.5946 14.1621 12.1244 13.7703L10.3687 12.3073C10.1768 12.1474 10.1768 11.8526 10.3687 11.6927Z" fill="black"></path>
+                                                            <path opacity="0.5" d="M16 5V6C16 6.55228 15.5523 7 15 7C14.4477 7 14 6.55228 14 6C14 5.44772 13.5523 5 13 5H6C5.44771 5 5 5.44772 5 6V18C5 18.5523 5.44771 19 6 19H13C13.5523 19 14 18.5523 14 18C14 17.4477 14.4477 17 15 17C15.5523 17 16 17.4477 16 18V19C16 20.1046 15.1046 21 14 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H14C15.1046 3 16 3.89543 16 5Z" fill="black"></path>
+                                                        </svg>
+                                                    </span>
+                                                    Cerrar sesión
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+
+               
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <router-outlet></router-outlet>
+
+
+    <div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
+
+        <div class="container d-flex flex-column flex-md-row flex-stack">
+    
+            <div class="text-dark order-2 order-md-1">
+                <span class="text-muted fw-bold me-1">2022 ©</span>
+                <a href="#" class="text-gray-800 text-hover-warning">Optical Networks</a>
+            </div>
+    
+            <ul class="menu menu-gray-600 menu-hover-primary fw-bold order-1">
+                <li class="menu-item">
+                    <a href="#" class="menu-link px-2">Inicio</a>
+                </li>
+            </ul>
+    
+        </div>
+    
+    </div>
+
+<svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg></body>
+
+
+
+
+
+
+<div id="modalPolitica" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false" style="background: rgb(241 241 241 / 91%);">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-header pb-0 border-0 justify-content-end">
+                <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+                    <span class="svg-icon svg-icon-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+                            <rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="modal-body scroll-y px-10 px-lg-10 pt-0 pb-15">
+
+                <div class="mb-2 text-center">
+                    <h1 class="mb-3 text-gray-700">Política de uso del aplicativo</h1>
+                </div>
+
+                <div class="row pb-0">
+                    
+                    <div class="card-px text-center pt-0 pb-5">
+
+                        <div class="d-flex align-items-start flex-shrink-0 mt-3 mb-10">
+                            <div class="d-flex flex-column ps-5">
+                                <div class="fs-5 fw-bolder text-center text-gray-800">
+                                    El siguiente aplicativo es de uso exclusivo del área de RRHH de la contrata, con el objetivo de la actualización en línea del personal relacionado con la operación de WIN.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-start flex-shrink-0 mb-3">
+                            <div class="d-flex flex-column">
+                                <div class="fs-4">
+                                    <span class="svg-icon svg-icon-muted svg-icon-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="black"/>
+                                        <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="black"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column ps-5">
+                                <div class="fs-5 text-gray-800 text-start">
+                                    Obligatorio mantenimiento actualizado (ceses, ingresos, etc.)
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start flex-shrink-0 mb-3">
+                            <div class="d-flex flex-column">
+                                <div class="fs-4">
+                                    <span class="svg-icon svg-icon-muted svg-icon-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="black"/>
+                                        <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="black"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column ps-5">
+                                <div class="fs-5 text-gray-800 text-start">
+                                    Es considerado falta muy grave el ingreso de datos falsos del personal técnico en el sistema.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start flex-shrink-0 mb-3">
+                            <div class="d-flex flex-column">
+                                <div class="fs-4">
+                                    <span class="svg-icon svg-icon-muted svg-icon-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="black"/>
+                                        <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="black"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column ps-5">
+                                <div class="fs-5 text-gray-800 text-start">
+                                    Solo se pueden registrar en el sistema con DNI o cedula (en caso del personal extranjero), no está permitido el registro con otro tipo de documento.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start flex-shrink-0 mb-3">
+                            <div class="d-flex flex-column">
+                                <div class="fs-4">
+                                    <span class="svg-icon svg-icon-muted svg-icon-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="black"/>
+                                        <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="black"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column ps-5">
+                                <div class="fs-5 text-gray-800 text-start">
+                                Es obligatorio el llenado completo de los datos solicitados del sistema.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start flex-shrink-0 mb-3">
+                            <div class="d-flex flex-column">
+                                <div class="fs-4">
+                                    <span class="svg-icon svg-icon-muted svg-icon-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="black"/>
+                                        <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="black"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column ps-5">
+                                <div class="fs-5 text-gray-800 text-start">
+                                    No usar frases como lista negra o que esta reportado por WIN al momento de respuesta de observación del
+                                    técnico. Al momento de contratar y tener la observación solo derivar a la contrata anterior.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start flex-shrink-0 mb-3">
+                            <div class="d-flex flex-column">
+                                <div class="fs-4">
+                                    <span class="svg-icon svg-icon-muted svg-icon-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="black"/>
+                                        <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="black"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column ps-5">
+                                <div class="fs-5 text-gray-800 text-start">
+                                    Será considerado falta muy grave hallar técnicos en campo que no se encuentren registrados en el aplicativo.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start flex-shrink-0 mb-3">
+                            <div class="d-flex flex-column">
+                                <div class="fs-4">
+                                    <span class="svg-icon svg-icon-muted svg-icon-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="black"/>
+                                        <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="black"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column ps-5">
+                                <div class="fs-5 text-start text-gray-800">
+                                    Importante recalcar que el personal a cargo de la contratista debe ser contratado de manera directa y no a través de subcontrata.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start flex-shrink-0 mt-10 mb-3">
+                            <div class="d-flex flex-column ps-5">
+                                <div class="fs-5 fw-bolder text-start">
+                                    Recordar que si no se cumple con el reglamento se va a penalizar según corresponda por cada incumplimiento.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+                <!-- <div class="text-center">
+
+                    <button type="submit" class="btn btn-dark btn-lg fw-bolder w-100">
+                        <span>Entendido</span>
+                    </button>
+
+                </div> -->
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- <link href="/src/assets/css/style.bundle.css" rel="stylesheet">
+<script src="/src/assets/js/scripts.bundle.js"></script> -->

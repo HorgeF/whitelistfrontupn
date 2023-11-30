@@ -1,0 +1,111 @@
+<div class="modal-content">
+
+    <div class="row-12">
+        <div class="modal-header pb-0 border-0 justify-content-end">
+            <div #closebutton class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+                <span class="svg-icon svg-icon-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+                        <rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+                    </svg>
+                </span>
+            </div>
+        </div>
+        <div class="modal-body scroll-y px-10 px-lg-10 pt-0 pb-15">
+    
+            <div class="mb-8 text-center">
+                <h1 class="mb-3 text-gray-700">Historial de status</h1>
+            </div>
+    
+            <div class="row g-9">
+                <div class="col-md-12 fv-row mb-5">
+                    
+                    <form [formGroup]="ObsForm"  class="position-relative mb-6 me-5 ms-5">
+                        <textarea
+                         class="form-control border-0 p-0 pe-15 resize-none min-h-25px" 
+                         data-kt-autosize="true" 
+                         rows="1"
+                         formControlName = "observacion" 
+                         placeholder="Agregar un comentario u observación"></textarea>
+                        <div class="position-absolute top-0 end-0 me-n5" (click)="ObservarStaff(ObsForm.value)">
+                            <span class="btn btn-icon btn-light ps-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M15.43 8.56949L10.744 15.1395C10.6422 15.282 10.5804 15.4492 10.5651 15.6236C10.5498 15.7981 10.5815 15.9734 10.657 16.1315L13.194 21.4425C13.2737 21.6097 13.3991 21.751 13.5557 21.8499C13.7123 21.9488 13.8938 22.0014 14.079 22.0015H14.117C14.3087 21.9941 14.4941 21.9307 14.6502 21.8191C14.8062 21.7075 14.9261 21.5526 14.995 21.3735L21.933 3.33649C22.0011 3.15918 22.0164 2.96594 21.977 2.78013C21.9376 2.59432 21.8452 2.4239 21.711 2.28949L15.43 8.56949Z" fill="black"/>
+                                <path opacity="0.3" d="M20.664 2.06648L2.62602 9.00148C2.44768 9.07085 2.29348 9.19082 2.1824 9.34663C2.07131 9.50244 2.00818 9.68731 2.00074 9.87853C1.99331 10.0697 2.04189 10.259 2.14054 10.4229C2.23919 10.5869 2.38359 10.7185 2.55601 10.8015L7.86601 13.3365C8.02383 13.4126 8.19925 13.4448 8.37382 13.4297C8.54839 13.4145 8.71565 13.3526 8.85801 13.2505L15.43 8.56548L21.711 2.28448C21.5762 2.15096 21.4055 2.05932 21.2198 2.02064C21.034 1.98196 20.8409 1.99788 20.664 2.06648Z" fill="black"/>
+                                </svg>
+                            </span>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+    
+            <div class="separator mb-4"></div>
+            
+            <div class="row g-9">
+                <div class="col-md-12 fv-row mb-5">
+                    
+                    <div class="scroll-y me-n7 pe-7 mt-6" style="max-height: 300px !important;" data-kt-scroll="true" data-kt-scroll-offset="200px">
+    
+                        <div class="timeline" *ngIf="ListadoObservacion.length > 0">
+    
+                            <div class="timeline-item" *ngFor = "let obs of ListadoObservacion">
+                                
+                                <div class="timeline-line w-40px"></div>
+                                
+                                <div class="timeline-icon symbol symbol-circle symbol-40px me-4">
+                                    <div class="symbol-label bg-light">
+                                        
+                                        <span class="svg-icon svg-icon-2 svg-icon-gray-500">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path opacity="0.3" d="M2 4V16C2 16.6 2.4 17 3 17H13L16.6 20.6C17.1 21.1 18 20.8 18 20V17H21C21.6 17 22 16.6 22 16V4C22 3.4 21.6 3 21 3H3C2.4 3 2 3.4 2 4Z" fill="black"></path>
+                                                <path d="M18 9H6C5.4 9 5 8.6 5 8C5 7.4 5.4 7 6 7H18C18.6 7 19 7.4 19 8C19 8.6 18.6 9 18 9ZM16 12C16 11.4 15.6 11 15 11H6C5.4 11 5 11.4 5 12C5 12.6 5.4 13 6 13H15C15.6 13 16 12.6 16 12Z" fill="black"></path>
+                                            </svg>
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="timeline-content mb-10 mt-n1" *ngIf="ListadoObservacion.length > 0">
+                                    
+                                    <div class="pe-3 mb-5">
+                                        
+                                        <div class="fs-5 fw-bold mb-2"><a href="#" class="text-primary fw-bolder me-1">ADMIN</a> Observó al técnico.</div>
+                                        
+                                        <div class="d-flex align-items-center mt-1 fs-6">
+                                            
+                                            <div class="text-muted me-2 fs-7">{{ currentDate | date:'medium' }}</div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+    
+                                    <div>
+                                        <p>
+                                            {{obs.observacion}}
+                                        </p>
+                                    </div>
+                                                                                              
+                                </div>
+
+                            </div>
+    
+                        </div>
+
+                        <div class="timeline" *ngIf="ListadoObservacion.length === 0">
+
+                           NO DATA
+                        </div>
+    
+                    </div>
+                    
+                </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+
+</div>
